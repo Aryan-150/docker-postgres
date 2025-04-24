@@ -13,7 +13,7 @@
  - Run: `npm run start`
 
 ## Docker installation:
- # Running both the postgres & the project in containers individually and connected via network:
+ ### Running both the postgres & the project in containers individually and connected via network:
   - Install docker
   - Create a network
     - `docker network create postgres_network`
@@ -27,3 +27,5 @@
     - `docker run --network postgres_network -e DATABASE_URL=postgresql://postgres:mysecretpassword@postgresdb:5432/mydb?schema=public -p 3000:3000 postgres_app`
 
 ## Docker compose Installation:
+ - Install docker, docker-compose comes by default with docker.
+ - `docker-compose up`
